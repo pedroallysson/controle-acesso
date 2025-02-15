@@ -102,7 +102,7 @@ int main()
                 }
                 else
                 {
-                    ssd1306_draw_string(ssd, 5, 16, "Mat. Invalida");
+                    ssd1306_draw_string(ssd, 5, 16, "Acesso Negado");
                     render_on_display(ssd, &frame_area);
                     gpio_put(LED_R, 1);
                     buzzer(250, 300);
