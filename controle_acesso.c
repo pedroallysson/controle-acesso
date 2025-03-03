@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include <string.h>
-#include <stdlib.h>
 #include <ctype.h>
 #include "pico/binary_info.h"
 #include "inc/ssd1306.h"
