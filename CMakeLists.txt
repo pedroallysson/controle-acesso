@@ -36,10 +36,12 @@ pico_sdk_init()
 # Add executable. Default name is the project name, version 0.1
 
 add_executable(controle_acesso 
-controle_acesso.c
+main.c
 inc/ssd1306_i2c.c
-src/pinos.c
-src/funcoes.c )
+src/led.c
+src/buzzer.c
+src/display.c
+src/teclado.c )
 
 pico_set_program_name(controle_acesso "controle_acesso")
 pico_set_program_version(controle_acesso "0.1")

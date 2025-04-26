@@ -38,6 +38,9 @@
     "raspberry-pi-pico.ninjaPath": "${HOME}/.pico-sdk/ninja/v1.12.1/ninja",
     "files.associations": {
         "*.py": "python",
-        "pinos.h": "c"
+        "pinos.h": "c",
+        "ssd1306.h": "c",
+        "i2c.h": "c",
+        "stdlib.h": "c"
     }
 }

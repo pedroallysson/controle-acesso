@@ -3,9 +3,7 @@
 
 #include <stdint.h>
 
-
+void init_buzzer();
 void buzzer(uint freq, uint timer);
-
-extern uint32_t clock_freq;
 
 #endif 

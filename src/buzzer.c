@@ -1,10 +1,20 @@
 #include "pico/stdlib.h"
-#include "hardware/pwm.h"
+#include "./hardware/pwm.h"
 #include <string.h>
 #include <stdio.h>
-#include "./bibliotecas/pinos.h"
-#include "./bibliotecas/funcoes.h"
+#include "include/buzzer.h"
 
+const uint BUZZER = 10;
+uint32_t clock_freq = 125000000;  
+
+// Função de inicialização do buzzer
+void init_buzzer()
+{
+    gpio_init(BUZZER);
+    gpio_set_dir(BUZZER, GPIO_OUT);
+    gpio_put(BUZZER, 0);
+    gpio_set_function(BUZZER, GPIO_FUNC_PWM);
+}
 
 // Função de som do buzzer
 void buzzer(uint freq, uint timer)
